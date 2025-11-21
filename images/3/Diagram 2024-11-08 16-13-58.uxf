@@ -1,0 +1,21 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>610</x><y>130</y><w>190</w><h>120</h></coordinates><panel_attributes>*API Design*
+--
+halign=center
+
+/endpoints
+fg=#192461
+
+fontsize=16
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>270</y><w>140</w><h>120</h></coordinates><panel_attributes>*Client*
+fontsize=19
+valign=center
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>350</y><w>190</w><h>120</h></coordinates><panel_attributes>*Swagger.io*
+--
+halign=center
+
+Crear documentación
+
+fg=#192461
+
+fontsize=16
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>180</y><w>180</w><h>160</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>320</y><w>180</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;90;10;10</additional_attributes></element></diagram>
