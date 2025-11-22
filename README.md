@@ -1,10 +1,12 @@
 <img src="./images/neteclogo.png" width="250px">
 
+# Fundamentos y Gestión de APIs
 
-**Plataforma de Laboratorios**
+## Plataforma de laboratorios
+
 Bienvenido a la **plataforma de Laboratorios** del curso **Fundamentos y Gestión de APIs**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
-# Lista de Laboratorios
+# Lista de laboratorios
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
 ### [Consumir y analizar una API pública](./Capitulo1/README.md)
