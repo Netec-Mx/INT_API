@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>205</x><y>225</y><w>270</w><h>160</h></coordinates><panel_attributes>*Insomnia*
+Running
+
+
+fontsize=29
+lt=..
+fg=#8d2ce8
+
+valign=center
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>225</y><w>270</w><h>160</h></coordinates><panel_attributes>*Public API*
+
+Internet
+
+fontsize=29
+lt=..
+fg=#167d32
+
+valign=center
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>235</y><w>180</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-
+
+lw=3
+
+fontsize=26
+response
+
+cbase=u
+</panel_attributes><additional_attributes>10;100;340;100</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>320</y><w>180</w><h>65</h></coordinates><panel_attributes>lt=&lt;&lt;-
+
+lw=3
+
+request
+fontsize=26
+</panel_attributes><additional_attributes>340;30;10;30</additional_attributes></element></diagram>
