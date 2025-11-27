@@ -117,7 +117,7 @@ https://jsonplaceholder.typicode.com/posts
 
 ### Tarea 4. Analizar el resultado del POST.
 
-El alumno debe de identificar lo siguiente:
+Identificar lo siguiente:
 
 **Paso 1.** Headers enviados por el servidor.
 
