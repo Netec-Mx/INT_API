@@ -58,9 +58,9 @@ navegación-->
 ![alt text](../images/1/2.png)
 
 **Paso 7.** Realiza las siguientes peticiones:
-    - **GET**: */posts*
-    - **GET**: */posts/1*
-    - **GET**: */comments?postId=1*
+  - **GET**: */posts*
+  - **GET**: */posts/1*
+  - **GET**: */comments?postId=1*
 
 ![alt text](../images/1/3.png)
 
