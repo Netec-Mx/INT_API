@@ -65,10 +65,10 @@ navegación-->
 ![alt text](../images/1/3.png)
 
 **Paso 8.** Registra en un documento de texto lo siguiente: 
-    - Código de estado (200, 404, etc.).
-    - Headers importantes (Content-Type, Server, Date).
-    - Tiempo de respuesta.
-    - Tipo de datos devueltos.
+  - Código de estado (200, 404, etc.).
+  - Headers importantes (Content-Type, Server, Date).
+  - Tiempo de respuesta.
+  - Tipo de datos devueltos.
 
 **Paso 9.** <ins>Prueba un error</ins>: envía un GET a una ruta inexistente:
 
@@ -77,24 +77,24 @@ GET https://jsonplaceholder.typicode.com/xyz123
 ```
 
 **Paso 10.** Observa lo siguiente:
-    - Código de estado.
-    - Mensaje de error.
-    - Cómo responde la API ante recursos inexistentes.
+  - Código de estado.
+  - Mensaje de error.
+  - Cómo responde la API ante recursos inexistentes.
 
 ![alt text](../images/1/4.png)
 
 **Paso 11.** Analiza la estructura de un recurso. Con el endpoint `/users`, analiza: 
-    - ¿Qué campos incluye cada usuario?
-    - ¿Tiene datos anidados? (Por ejemplo: address.geo.lat).
-    - ¿Qué tipo de datos es cada campo?
+  - ¿Qué campos incluye cada usuario?
+  - ¿Tiene datos anidados? (Por ejemplo: address.geo.lat).
+  - ¿Qué tipo de datos es cada campo?
 
     ![alt text](../images/1/5.png)
 
 **Paso 12.** Explica qué aprendiste.
-    - ¿Qué es un recurso en una API REST?
-    - ¿Cómo se diferencian rutas, parámetros y query strings?
-    - ¿Qué te indicó el código de estado?
-    - ¿Por qué es importante usar herramientas como Postman?
+  - ¿Qué es un recurso en una API REST?
+  - ¿Cómo se diferencian rutas, parámetros y query strings?
+  - ¿Qué te indicó el código de estado?
+  - ¿Por qué es importante usar herramientas como Postman?
 
 ## Resultado esperado
 - Tanto en el **navegador web** como en la herramienta **Postman** se debería de observar una salida similar a lo siguiente: 
