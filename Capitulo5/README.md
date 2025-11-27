@@ -1,10 +1,12 @@
-# 5. API Gateway Kong para administrar acceso a APIs
-Se necesita crear una alerta que le avise al equipo cuando un microservicio se ha caido. 
+# Práctica 5. API Gateway Kong para administrar acceso a APIs
+
+Crear una alerta que avise cuando un microservicio se ha caído.
 
 ## Objetivos
-- Configurar Kong en modo DB-less usando un archivo declarativo (kong.yaml).
-- Exponer los apis client y item bajo un único API Gateway.
-- Validar el comportamiento del Gateway desde el punto de vista del consumidor de APIs.
+
+  - Configurar Kong en modo DB-less usando un archivo declarativo (**kong.yaml**).
+  - Exponer los API client e item bajo un único API Gateway.
+  - Validar el comportamiento del Gateway desde el punto de vista del consumidor de API.
 
 ---
 <div style="width: 400px;">
@@ -27,23 +29,24 @@ Se necesita crear una alerta que le avise al equipo cuando un microservicio se h
 
 ---
 
-
-## Diagrama
-
 ![diagrama](../images/5/diagrama.png)
 
+---
 
-> **NOTA:** Asegurarse que este iniciado el motor de Docker para que se puedan iniciar los contenedores que usaremos en la práctica.
+⚠️ **Nota.** Asegúrate de que que esté <ins>iniciado</ins> el motor de **Docker** para que se puedan iniciar los contenedores necesarios para la práctica.
+
+---
 
 ## Instrucciones
 
-1. En el escritorio crear una carpeta que llamaremos lab5
+**Paso 1.** En el escritorio, crear una carpeta llamada **lab5**.
 
-2. Dentro de la carpeta añadiremos 2 archivos:
-    - **docker-compose.yaml**
-    - **kong.yaml**
+**Paso 2.** Dentro de la carpeta, añadir 2 archivos:
 
-3. Dentro del archivo **docker-compose.yaml** añadiremos el siguiente contenido: 
+  - **docker-compose.yaml**
+  - **kong.yaml**
+
+**Paso 3.** Dentro del archivo **docker-compose.yaml**, añadir el siguiente contenido:
 
 ```yaml
 services:
@@ -99,7 +102,7 @@ services:
       - microitem
 ```
 
-4. Dentro del archivo **kong.yaml** añadiremos el siguiente contenido: 
+**Paso 4.** Dentro del archivo **kong.yaml**, añadir el siguiente contenido:
 
 ```yaml
 _format_version: "3.0"
@@ -121,31 +124,28 @@ services:
           - /api2
 ```
 
-5. Dentro del archivo de **kong.yaml** podemos ubicar lo siguiente:
+**Paso 5.** Dentro del archivo de **kong.yaml**, ubicar lo siguiente:
 
-- Se definen las rutas para conectarse a nuestros apis
+  - Se definen las rutas para conectarse al API.
+  - Se define el sufijo de cada ruta **/api1** para <ins>client</ins> y **/api2** para <ins>item</ins>.
 
-- Se define el sufijo de cada ruta **/api1** para client y **/api2** para item. 
-
-5. Se abre una terminal dentro de la carpeta **lab5**
+**Paso 6.** Se abre una terminal dentro de la carpeta **lab5**.
 
 ![alt text](../images/5/1.png)
 
-6. Ejecutar el siguiente comando:
+**Paso 7.** Ejecutar el siguiente comando:
 
 ```bash
 docker-compose up -d
 ```
 
-> **NOTA:** Esperar que el comando termine de ejecutarse, tardará unos minutos ya que tiene que descargar las imagenes de cada uno de los contenedores
+⚠️ **Nota.** Espera a que el comando termine de ejecutarse, tardará unos minutos, ya que tiene que descargar las imágenes de cada uno de los contenedores.
 
-7. Al terminar de ejecutarse el comando deberíamos de observar lo siguiente en la terminal:
-
+**Paso 8.** Cuando el comando termine de ejecutarse, observa lo siguiente en la terminal:
 
 ![alt text](../images/5/2.png)
 
-
-8. Válida con el siguiente comando que los contenedores esten iniciados:
+**Paso 9.** Valida con el siguiente comando que los contenedores estén iniciados:
 
 ```bash
 docker ps
@@ -153,10 +153,7 @@ docker ps
 
 ![alt text](../images/5/3.png)
 
-
-
-9. Abrir postman y probar el siguiente url con el método **GET**, para conectarse al api clients:
-
+**Paso 10.** Abrir **Postman** y probar el siguiente url con el método **GET** para conectarse al API client:
 
 ```bash
 http://localhost:8000/api1/client
@@ -164,7 +161,7 @@ http://localhost:8000/api1/client
 
 ![alt text](../images/5/4.png)
 
-10. Abrir otro request en **Postman** y probar el siguiente url para conectarse al API items
+**Paso 11.** Abrir otro request en **Postman** y probar el siguiente url para conectarse al API item:
 
 ```bash
 http://localhost:8000/api2/item
@@ -172,13 +169,10 @@ http://localhost:8000/api2/item
 
 ![alt text](../images/5/5.png)
 
-11. Podemos observar que ambos request se conectan al mismo puerto **8000** porque nos conectamos por el API gateway **kong**
+**Paso 12.** Observa que ambos request se conectan al mismo puerto: **8000**, porque nos conectamos por el API Gateway **kong**.
 
-12. Fin práctica
+## Resultado esperado
 
-
-## Resultado Esperado [Instrucciones](#instrucciones)
-
-Al final del laboratorio los alumnos tendrán 2 requests que se conectan al **API Gateway Kong**
+  - Tener 2 requests que se conectan al **API Gateway Kong**
 
 ![alt text](../images/5/6.png)
