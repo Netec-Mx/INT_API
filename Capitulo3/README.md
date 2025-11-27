@@ -1,12 +1,12 @@
-# 3. Diseñando endpoints, versionamiento y documentación de un API
-El alumno aprenderá a diseñar endpoints, versionamiento de una API para una empresa que requiere la gestión de productos y categorías. 
+# Práctica 3. Diseñando endpoints, versionamiento y documentación de un API
+
+Aprender a diseñar endpoints, versionamiento de una API, para una empresa que requiere la gestión de productos y categorías.
 
 ## Objetivos
 - Diseñar una API versionada correctamente.
 - Estructurar recursos, subrecursos y parámetros.
 - Diferenciar entre versionamiento por path, header y param.
 - Documentar un servicio siguiendo buenas prácticas oficiales.
-
 
 ---
 
@@ -30,32 +30,28 @@ El alumno aprenderá a diseñar endpoints, versionamiento de una API para una em
 
 ---
 
-
-## Diagrama
-
 ![diagrama](../images/3/diagrama.png)
-
 
 ## Instrucciones
 
-### Escenario
+### Escenario.
 
-***La empresa tiene una API para gestionar productos y categorías.
-Nueva versión (v2) agrega campo stock al producto y endpoint para búsqueda.***
+*La empresa tiene una **API** para gestionar productos y categorías.
+Una nueva versión (v2) agrega el campo **stock** al producto y endpoint para búsqueda.*
 
 ---
-### Diseñar un esquema de versionamiento
 
-1. Diseñar la estructura de endpoints para v1 usando versionamiento por **path**.
+### Tarea 1. Diseñar un esquema de versionamiento.
 
-2. Diseñar la estructura de endpoints para v2 agregando las mejoras.
+**Paso 1.** Diseñar la estructura de endpoints para v1 usando versionamiento por **path**.
 
-3. Escribir ambos conjuntos de endpoints en formato de lista.
+**Paso 2.** Diseñar la estructura de endpoints para v2 agregando las mejoras.
 
+**Paso 3.** Escribir ambos conjuntos de endpoints en formato de lista.
 
-4. En un archivo escribe la propuesta de los endpoints  para la primer versión.
+**Paso 4.** En un archivo, escribir la propuesta de los endpoints para la primer versión.
 
-5. El resultado esperado debería es el siguiente para la **versión 1**:
+**Paso 5.** Para la **versión 1**, este es el resultdo esperado:
 
 ```text
 GET /api/v1/products
@@ -66,9 +62,9 @@ GET /api/v1/categories
 GET /api/v1/categories/{categoryId}
 ```
 
-6. Generar los endpoints para la versión 2 siguiendo las buenas prácticas, nuevas características:
+**Paso 6.** Generar los endpoints para la **versión 2**, siguiendo las buenas prácticas, con nuevas características:
 
-- Nuevo endpoint **/search**
+  - Nuevo endpoint **/search**.
 
 ```text
 GET /api/v2/products
@@ -79,32 +75,30 @@ GET /api/v2/products/search?q={query}
 GET /api/v2/categories
 GET /api/v2/categories/{categoryId}
 ```
----
-
 
 ---
-### Documentar API (Crear un archivo OpenAPI básico)
 
-1. Crear un archivo de openapi.yaml que documente dos endpoints:
+### Tarea 2. Documentar API (crear un archivo OpenAPI básico).
 
-- GET /api/v2/products
-- POST /api/v2/products
+**Paso 1.** Crear un archivo de **openapi.yaml** que documente dos endpoints:
 
-2. Abrir en un navegador web con el siguiente URL:
+  - GET /api/v2/products
+  - POST /api/v2/products
 
-```bash
-https://editor.swagger.io/
-```
+**Paso 2.** Abrir en un navegador web con el siguiente URL:
+
+[https://editor.swagger.io/](https://editor.swagger.io/)
 
 ![alt text](../images/3/1.png)
 
-3. Crear un documento OpenAPI con:
-    - info
-    - servers
-    - paths
-    - schemas (solo Product)
+**Paso 3.** Crear un documento OpenAPI con:
 
-4. Dentro de la página de swagger.io añadir la siguiente estructura YAML:
+  - info
+  - servers
+  - paths
+  - schemas (solo <ins>Product</ins>)
+
+**Paso 4.** Dentro de la página de **swagger.io**, añadir la siguiente estructura YAML:
 
 ```yaml
 openapi: 3.0.3
@@ -157,33 +151,26 @@ components:
 
 ```
 
+**Paso 5.** Analizar el YAML y observar la estructura de la documentación.
 
-5. Analizar el YAML y observar la estructura de la documentación. 
-
-6. En **swagger.io** añadir el YAML y observar la documentación generada. 
+**Paso 6.** En **swagger.io** añadir el YAML y observar la documentación generada.
 
 ![alt text](../images/3/2.png)
 
-7. Observar la documentación del **GET**
+**Paso 7.** Observar la documentación del **GET**.
 
 ![alt text](../images/3/3.png)
 
-8. Documentación del **POST**
+**Paso 8.** Documentación del **POST**.
 
 ![alt text](../images/3/4.png)
 
-
-9. Cómo tarea opcional se puede agregar los demás endpoints generados. 
+**Paso 9.** Opcional: agregar los demás endpoints generados.
 
 ---
 
+## Resultado esperado
 
-## Resultado esperado [Instrucciones](#instrucciones)
-
-El alumno al final tendrá la documentación generada desde swagger.io.
-
-
+  - Tener la documentación generada desde **swagger.io**.
 
 ![alt text](../images/3/5.png)
-
-
