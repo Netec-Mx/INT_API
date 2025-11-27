@@ -1,11 +1,11 @@
-# 2. Explorando una petición HTTP completa usando POSTMAN y cURL
-En este laboratorio se espera que el participante identifique y analice los componentes de una petición HTTP (método, URL, headers, body) y comprenda la estructura de una respuesta HTTP (código de estado, headers y cuerpo de respuesta).
+# Práctica 2. Explorando una petición HTTP completa usando Postman y cURL
+En este laboratorio identificarás y analizarás los componentes de una petición HTTP (método, URL, headers, body), además, comprenderás la estructura de una respuesta HTTP (código de estado, headers y cuerpo de respuesta).
 
 
 ## Objetivos
-- Identificar los componentes de un HTTP request
+- Identificar los componentes de un HTTP request.
 - Comprender la estructura de una respuesta HTTP.
-- Analizar códigos de estado, headers y cuerpo de respuesta
+- Analizar códigos de estado, headers y cuerpo de respuesta.
 
 ---
 <div style="width: 400px;">
@@ -30,72 +30,78 @@ En este laboratorio se espera que el participante identifique y analice los comp
 
 ---
 
-## Diagrama
-
 ![Implementacion](../images/2/diagrama.png)
 
 <br>
 
-
 ## Instrucciones
 
----
-### Enviar una petición GET
-1. Abrir **Postman**
-2. Crear una nueva colección que llamaremos **lab2**
-3. Seleccionar el método **GET**
-4. En el campo **URL**, escribir:
+### Tarea 1. Enviar una petición GET.
+
+**Paso 1.** Abrir **Postman**.
+
+**Paso 2.** Crear una nueva colección llamada **lab2**.
+
+**Paso 3.** Seleccionar el método **GET**.
+
+**Paso 4.** En el campo **URL**, escribir:
 
 ```bash
 https://jsonplaceholder.typicode.com/posts/1
 ```
 
-5. No enviar headers ni body adicionales
+**Paso 5.** <ins>No</ins> enviar headers ni body adicionales.
 
-6. Hacer click enviar
+**Paso 6.** Dar click en **enviar**.
 
 ![alt text](../images/2/1.png)
 
 
-### Analiza la respuesta de la petición GET
-Despúes de enviar la petición debes de identificar:
+### Tarea 2. Analiza la respuesta de la petición GET.
 
-1. Código de estado:
-    - Verifica si el API regresó un 200 OK.
+Despúes de enviar la petición, debes de identificar:
+
+**Paso 1.** El código de estado:
+
+  - Verifica si el API regresó un 200 OK.
 
 ![alt text](../images/2/2.png)
 
-2. Headers de respuesta, debes de localizar lo siguiente:
+**Paso 2.** Headers de respuesta. Localiza lo siguiente:
 
-    - Content-Type
-    - Connection
-    - Date
-    - Server
+  - Content-Type.
+  - Connection.
+  - Date.
+  - Server.
 
 ![alt text](../images/2/3.png)
 
-3. Cuerpo (body) de la respuesta, identifica lo siguiente:
-    - userId
-    - id
-    - title
-    - body
+**Paso 3.** Cuerpo (body) de la respuesta. Identifica lo siguiente:
+
+  - userId.
+  - id.
+  - title.
+  - body.
 
 ![alt text](../images/2/4.png)
----
 
 ---
-### Enviar una petición POST con body JSON
-1. Dentro de la misma colección crea una nueva petición.
 
-2. Seleccionar el método **POST**.
+### Tarea 3. Enviar una petición POST con body JSON.
 
-3. Escribe la siguiente URL
+**Paso 1.** Dentro de la misma colección, crea una nueva petición.
+
+**Paso 2.** Selecciona el método **POST**.
+
+**Paso 3.** Escribe la siguiente URL:
 
 ```bash
 https://jsonplaceholder.typicode.com/posts
 ```
-4. Ir a la pestaña de **body**->**raw**->**JSON** 
-5. Escribir el siguiente **JSON**
+
+**Paso 4.** Ir a la pestaña de **`body`** -> **`raw`** -> **`JSON`**.
+
+**Paso 5.** Escribir el siguiente **JSON**:
 
 ```json
 {
@@ -104,35 +110,36 @@ https://jsonplaceholder.typicode.com/posts
   "userId": 123
 }
 ```
-6. Enviar la petición
+
+**Paso 6.** Enviar la petición.
 
 ![alt text](../images/2/5.png)
 
-### Analizar el resultado del POST
+### Tarea 4. Analizar el resultado del POST.
 
-El alumno debe de identificar lo siguiente: 
+El alumno debe de identificar lo siguiente:
 
-1. **Headers enviados por el servidor**
-    - Content-Type: application/json
-    - Content-Length
+**Paso 1.** Headers enviados por el servidor.
+
+  - **Content-Type**: application/json.
+  - **Content-Length**.
 
 ![alt text](../images/2/6.png)
 
-2. **Código de estado esperado**
-    - 201 Created
+**Paso 2.** Código de estado esperado.
+
+  - 201 Created.
 
 ![alt text](../images/2/7.png)
 
-3. **Body Esperado**: El API debe de regresar el objetivo enviado, agregando un campo *id*.
+**Paso 3.** <ins>Body esperado</ins>: el API debe de regresar el objetivo enviado, agregando un campo **id**.
 
 ![alt text](../images/2/8.png)
-
 
 ---
 
 ## Resultado esperado
 
-Al final el alumno debería de tener los 2 request de HTTP en postman. 
+  - Al final, deberás de tener los <ins>2 request</ins> de HTTP en **Postman**.
 
 ![alt text](../images/2/9.png)
-
