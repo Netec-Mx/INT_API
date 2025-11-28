@@ -25,7 +25,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
   - **Descripción**: usar API públicas para probar los métodos de autenticación de una API.
   - ⏱️**Duración estimada**: 60 min.
 
-### [Práctica 5. API Gateway Kong para administrar acceso a APIs](./Capitulo5/README.md)
+### [Práctica 5. API Gateway Kong para administrar acceso a API](./Capitulo5/README.md)
   - **Descripción**: implementar API Gateway Kong para controlar el acceso a API.
   - ⏱️**Duración estimada**: 45 min.
 
