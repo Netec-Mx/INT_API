@@ -4,7 +4,7 @@ Usando APIs públicas, probar los métodos de autenticación **API Key** y **Bea
 
 ## Objetivos
 
-  - Entender cómo funcionan los mecanismos de autenticación más usados en APIs.
+  - Entender cómo funcionan los mecanismos de autenticación más usados en API.
   - Usar API Keys en cabeceras.
   - Usar Tokens Bearer simulando JWT.
   - Analizar respuestas de error y códigos HTTP de seguridad.
