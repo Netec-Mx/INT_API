@@ -1,4 +1,4 @@
-# Práctica 5. API Gateway Kong para administrar acceso a APIs
+# Práctica 5. API Gateway Kong para administrar acceso a API
 
 Crear una alerta que avise cuando un microservicio se ha caído.
 
