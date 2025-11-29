@@ -173,6 +173,6 @@ http://localhost:8000/api2/item
 
 ## Resultado esperado
 
-  - Tener 2 requests que se conectan al **API Gateway Kong**
+  - Tener 2 requests que se conectan al **API Gateway Kong**.
 
 ![alt text](../images/5/6.png)
